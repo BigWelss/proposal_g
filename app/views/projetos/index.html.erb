@@ -1,0 +1,35 @@
+<% provide(:title, "Projetos")%>
+<% provide(:header, "Projetos")%>
+<p id="notice"><%= notice %></p>
+<main>
+  <section>
+      <div id="table-head" class="row">
+        <div class="col-xs-2 col-xs-offset-1">Nome</div>
+        <div class="col-xs-2">Usuario</div>
+        <div class="col-xs-2">Localizacao</div>
+        <div class="col-xs-2">Tipo projeto</div>
+      </div>
+      <% @projetos.each do |projeto| %>
+        <div id="table-content" class="row">
+          <div class="col-xs-2 col-xs-offset-1"><%= projeto.nome %></div>
+          <div class="col-xs-2"><%= projeto.usuario %></div>
+          <div class="col-xs-2"><%= projeto.localizacao %></div>
+          <div class="col-xs-2"><%= projeto.tipo_projeto %></div>
+          <div class="col-xs-1"><%= link_to projeto do %>
+            <span class="glyphicon glyphicon-eye-open"></span>
+            <% end %>
+          </div>
+          <div class="col-xs-1"><%= link_to edit_projeto_path(projeto) do %>
+            <span class="glyphicon glyphicon-edit"></span>
+            <% end %>
+          </div>
+          <div class="col-xs-1"><%= link_to projeto, method: :delete, data: { confirm: 'Are you sure?' } do %>
+            <span class="glyphicon glyphicon-remove"></span>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+
+  <%= link_to 'New Projeto', new_projeto_path %>
+  </section>
+</main>

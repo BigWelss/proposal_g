@@ -1,0 +1,19 @@
+<header>
+	<nav class="navbar navbar-default" >
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="#" class="pull-left">
+					<div class="navbar-brand">
+						<%= image_tag("sinax_logo.png", size: "170x50", :alt => "Brand", :class=>"img-responsive") %>
+					</div>
+				</a>
+				<div class="navbar-brand">
+					<a href="#" >
+						<h3 class="centered"><%= header(yield(:header)) %></h1>
+					</a>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+</header>

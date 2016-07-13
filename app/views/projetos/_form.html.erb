@@ -1,0 +1,62 @@
+<%= form_for(projeto) do |f| %>
+  <% if projeto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(projeto.errors.count, "error") %> prohibited this projeto from being saved:</h2>
+
+      <ul>
+      <% projeto.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %>
+    <%= f.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= f.label :codigo_base %>
+    <%= f.text_field :codigo_base %>
+  </div>
+
+  <div class="field">
+    <%= f.label :revisao %>
+    <%= f.number_field :revisao %>
+  </div>
+
+  <div class="field">
+    <%= f.label :data %>
+    <%= f.date_select :data %>
+  </div>
+
+  <div class="field">
+    <%= f.label :usuario %>
+    <%= f.text_field :usuario %>
+  </div>
+
+  <div class="field">
+    <%= f.label :observacoes %>
+    <%= f.text_area :observacoes %>
+  </div>
+
+  <div class="field">
+    <%= f.label :numero_habitantes %>
+    <%= f.number_field :numero_habitantes %>
+  </div>
+
+  <div class="field">
+    <%= f.label :localizacao %>
+    <%= f.text_field :localizacao %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tipo_projeto %>
+    <%= f.number_field :tipo_projeto %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
