@@ -20,17 +20,21 @@
 	padding-left: 10px;
 	line-height: 30px;
 }
-.btn {
-	width: 48%;
+#my-button {
 	font-weight: bold;
 	color: #FFF;
 	background-color: #903E3E;
     border-color: #FFF;
 }
 
-.btn:hover {
+#my-button:hover {
 	color: #903E3E;
     border-color: #FFF;
+    background-color: #e6e6e6;
+}
+
+.btn {
+	width: 49%;
 }
 
 #personal-link {
