@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
-  resources :projetos
-  root 'projetos#index'
-  get 'projeto/show'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+	root 'projetos#index'
+
+  	get 'usuario/show'
+ 	get 'projeto/show'
+
+  	get    '/login',   to: 'sessions#new'
+  	post   '/login',   to: 'sessions#create'
+  	delete '/logout',  to: 'sessions#destroy'
+
+  	resources :usuarios
+  	resources :projetos
 end
