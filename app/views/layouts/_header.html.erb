@@ -12,7 +12,11 @@
 						<h3 class="centered"><%= header(yield(:header)) %></h1>
 					</a>
 				</div>
-				
+				<% if logged_in? %>
+					<%= link_to "Log out", logout_path, method: "delete" %>
+				<% else %>
+					<p>ok</p>
+				<% end %>
 			</div>
 		</div>
 	</nav>

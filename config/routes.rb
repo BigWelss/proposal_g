@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-	root 'projetos#index'
+	root 'sessions#new'
 
   	get 'usuario/show'
  	get 'projeto/show'
