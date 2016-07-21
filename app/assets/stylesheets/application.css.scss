@@ -70,3 +70,7 @@ $gray-medium-light: #eaeaea;
   margin-top: 45px;
   @include box_sizing;
 }
+
+.min-width {
+  min-width: 320px;
+}
