@@ -6,47 +6,57 @@
 @import "bootstrap";
 
 #form-show label {
-	color: #8E9191;
-	margin-bottom: 1px;
-	font-size: 13px;
+  color: #8E9191;
+  margin-bottom: 1px;
+  font-size: 13px;
 }
 
-#form-show p {
-	width: 100%;
-	border: 2px solid #903E3E;
-	border-radius: 10px;
-	border-top-left-radius: 0px;
-	padding-left: 10px;
-	line-height: 30px;
+#form-show input, #form-show p, #form-show textarea {
+  width: 100%;
+  border: 2px solid #903E3E;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  padding: 0 10px;
+  line-height: 30px;
+  word-wrap: break-word;
 }
 #my-button {
-	font-weight: bold;
-	color: #FFF;
-	background-color: #903E3E;
-    border-color: #FFF;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #903E3E;
+  border-color: #FFF;
+  margin-top: 10px;
 }
 
 #my-button:hover {
-	color: #903E3E;
-    border-color: #FFF;
-    background-color: #e6e6e6;
+  color: #903E3E;
+  border-color: #FFF;
+  background-color: #e6e6e6;
 }
 
 .btn {
-	width: 100%;
+  width: 100%;
 }
 
 #personal-link {
-	margin-left: 30%;
+  margin-left: 30%;
 }
 
-#table-head {
-	border: 2px solid black;
+.table-icon-button {
+  margin-right: 10px;
 }
 
-#table-content{
-	border: 1px solid black;
+.table-icon-button:hover {
+  outline: none;
+  text-decoration: none;
 }
+
+.table-responsive {
+  min-width: 292px;
+}
+
+
+
 
 
 

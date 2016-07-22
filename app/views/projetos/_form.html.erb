@@ -1,7 +1,9 @@
 <%= form_for(projeto) do |f| %>
   <% if projeto.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(projeto.errors.count, "error") %> prohibited this projeto from being saved:</h2>
+      <h2>
+        <%= pluralize(projeto.errors.count, "error") %> Projeto não pôde ser salvo
+      </h2>
 
       <ul>
       <% projeto.errors.full_messages.each do |message| %>
@@ -10,53 +12,46 @@
       </ul>
     </div>
   <% end %>
+  <section>
+    <div class="row min-width">
+      <div id="form-show" class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 min-width">
+        <%= f.label :nome %>
+        <%= f.text_field :nome %>
 
-  <div class="field">
-    <%= f.label :nome %>
-    <%= f.text_field :nome %>
-  </div>
+        <%= f.label :codigo_base %>
+        <%= f.text_field :codigo_base %>
 
-  <div class="field">
-    <%= f.label :codigo_base %>
-    <%= f.text_field :codigo_base %>
-  </div>
+        <%= f.label :revisao %>
+        <%= f.number_field :revisao %>
 
-  <div class="field">
-    <%= f.label :revisao %>
-    <%= f.number_field :revisao %>
-  </div>
+        <%= f.label :data %>
+        <%= f.date_field :data %>
 
-  <div class="field">
-    <%= f.label :data %>
-    <%= f.date_select :data %>
-  </div>
+        <%= f.label :usuario %>
+        <%= f.text_field :usuario %>
 
-  <div class="field">
-    <%= f.label :usuario %>
-    <%= f.text_field :usuario %>
-  </div>
+        <%= f.label :observacoes %>
+        <%= f.text_area :observacoes %>
 
-  <div class="field">
-    <%= f.label :observacoes %>
-    <%= f.text_area :observacoes %>
-  </div>
+        <%= f.label :numero_habitantes %>
+        <%= f.number_field :numero_habitantes %>
 
-  <div class="field">
-    <%= f.label :numero_habitantes %>
-    <%= f.number_field :numero_habitantes %>
-  </div>
+        <%= f.label :localizacao %>
+        <%= f.text_field :localizacao %>
 
-  <div class="field">
-    <%= f.label :localizacao %>
-    <%= f.text_field :localizacao %>
-  </div>
+        <%= f.label :tipo_projeto %>
+        <%= f.number_field :tipo_projeto %>
+      </div>
+    </div>
 
-  <div class="field">
-    <%= f.label :tipo_projeto %>
-    <%= f.number_field :tipo_projeto %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
+  </section>
+  <div class="row min-width">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+      <% if projeto.persisted? %>
+          <%= f.submit "Atualizar Projeto", :id => 'my-button', :class => 'btn btn-default'%>
+      <% else %>
+          <%= f.submit "Criar Projeto", :id => 'my-button', :class => 'btn btn-default' %>
+      <% end %>
+    </div>
   </div>
 <% end %>

@@ -1,35 +1,35 @@
 <% provide(:title, "Log in") %>
-<main>
-  <section>
-    <div class="row min-width">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 ">
-        <%= form_for(:session, url: login_path) do |f| %>
-          <span class="input input--yoshiko">
-            <%= f.text_field :login,
-                             :id => 'input-10',
-                             :class => 'input__field input__field--yoshiko' %>
-            <label class="input__label input__label--yoshiko" for="input-10">
-              <span class="input__label-content input__label-content--yoshiko" data-content="Login">Login</span>
-            </label>
-          </span>
-          <span class="input input--yoshiko">
-            <%= f.password_field :password,
-                                 :id => 'input-10',
-                                 :class => 'input__field input__field--yoshiko' %>
-            <label class="input__label input__label--yoshiko" for="input-10">
-              <span class="input__label-content input__label-content--yoshiko" data-content="Password">Password</span>
-            </label>
-          </span>
-          <div class="row min-width">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-              <%= f.submit "Entrar", :id => "my-button", class: "btn btn-primary" %>
-            </div>
+<% provide(:header, "test") %>
+
+<section>
+  <div class="row min-width">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 ">
+      <%= form_for(:session, url: login_path) do |f| %>
+        <span class="input input--yoshiko">
+          <%= f.text_field :login,
+                           :id => 'input-10',
+                           :class => 'input__field input__field--yoshiko' %>
+          <label class="input__label input__label--yoshiko" for="input-10">
+            <span class="input__label-content input__label-content--yoshiko" data-content="Login">Login</span>
+          </label>
+        </span>
+        <span class="input input--yoshiko">
+          <%= f.password_field :password,
+                               :id => 'input-10',
+                               :class => 'input__field input__field--yoshiko' %>
+          <label class="input__label input__label--yoshiko" for="input-10">
+            <span class="input__label-content input__label-content--yoshiko" data-content="Password">Password</span>
+          </label>
+        </span>
+        <div class="row min-width">
+          <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+            <%= f.submit "Entrar", :id => "my-button", class: "btn btn-primary" %>
           </div>
-        <% end %>
-      </div>
+        </div>
+      <% end %>
     </div>
-  </section>
-</main>
+  </div>
+</section>
 <script>
   (function() {
     // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim

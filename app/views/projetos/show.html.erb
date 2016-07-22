@@ -2,10 +2,10 @@
 <% provide(:title, "Projeto " + head) %>
 <% provide(:header, head) %>
 
-<main>
+<section>
   <p id="notice"><%= notice %></p>
   <section>
-    <div class="row">
+    <div class="row min-width">
       <div id="form-show" class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 min-width">
 
         <label>Nome</label>
@@ -13,7 +13,7 @@
           <%= @projeto.nome %>
         </p>
 
-        <label>Codigo base</label>
+        <label>Código base</label>
         <p>
           <%= @projeto.codigo_base %>
         </p>
@@ -28,7 +28,7 @@
           <%= @projeto.data %>
         </p>
 
-        <label>Usuario</label>
+        <label>Usuário</label>
         <p>
           <%= @projeto.usuario %>
         </p>
@@ -65,4 +65,4 @@
       </div>
     </div>
   </section>
-</main>
+</section>

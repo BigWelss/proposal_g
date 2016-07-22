@@ -1,6 +1,15 @@
-<h1>Editing Projeto</h1>
+<% provide(:header, "Editar") %>
 
 <%= render 'form', projeto: @projeto %>
 
-<%= link_to 'Show', @projeto %> |
-<%= link_to 'Back', projetos_path %>
+
+<section>
+  <div class="row min-width">
+    <div class="col-xs-6 col-sm-3 col-sm-offset-3 col-md-2 col-md-offset-4">
+      <%= link_to 'Mostrar', @projeto, :id => "my-button", :class => "btn btn-default"%>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-2 ">
+      <%= link_to 'Voltar', projetos_path, :id => "my-button", :class => "btn btn-default pull-right" %>
+    </div>
+  </div>
+</section>
