@@ -46,7 +46,7 @@ a:hover, a:focus{
 .centered {
   position: relative;
   top: 10px;
-  left: 42%;
+  left: 30%;
 }
 
 h3 {
@@ -131,11 +131,20 @@ span.glyphicon-menu-hamburger {
 }
 
 .logo {
-  background-image: image-url("sinax-logo.png") returns url(/assets/sinax-logo.png);
+  margin-top: 10px;
+  background-image: asset-data-url("sinax_logo.png");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 75px;
 }
 
 @media (max-width: 767px){
   .logo {
-    background-image: image-url("sinax-logo-sm.png")
+    background-image: asset_data_url("sinax_logo_sm.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 50px;
   }
 }

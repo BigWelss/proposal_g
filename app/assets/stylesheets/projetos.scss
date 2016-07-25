@@ -2,13 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
 #form-show label {
   color: #8E9191;
   margin-bottom: 1px;
-  font-size: 13px;
+  font-size: .8em;
 }
 
 #form-show input, #form-show p, #form-show textarea {

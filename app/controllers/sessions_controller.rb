@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if usuario && usuario.authenticate(params[:session][:password])
       flash[:success] = "Bem-vindo ao Pricing"
     	log_in usuario
-      redirect_to '/projetos'
+      redirect_to '/'
     else
       flash[:danger] = 'Login ou password inválidos'
       render 'new'
