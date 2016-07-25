@@ -40,21 +40,22 @@ a:hover, a:focus{
 }
 
 .navbar-brand a:hover, .navbar-brand a:focus {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .centered {
-	position: relative;
-	top: 10px;
-	left: 42%;
+  position: relative;
+  top: 10px;
+  left: 42%;
 }
 
 h3 {
-	color: #AB4B4B;
+  color: #AB4B4B;
 }
 
 body {
-	min-width: 353px;
+  min-width: 353px;
+
 }
 
 .min-width {
@@ -73,4 +74,68 @@ input {
 
 textarea:focus, input:focus{
   outline: none;
+}
+
+.menu {
+  background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
+  right: -285px;
+  height: 100%;
+  position: fixed;
+  width: 285px;
+  z-index: 1;
+}
+
+.menu ul {
+  border-top: 1px solid #636366;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #636366;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 45px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-top: 3px;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-close {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.icon-menu {
+  color: #000;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  padding-bottom: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+span.glyphicon-menu-hamburger {
+  font-size: 1.6em;
+}
+
+.logo {
+  background-image: image-url("sinax-logo.png") returns url(/assets/sinax-logo.png);
+}
+
+@media (max-width: 767px){
+  .logo {
+    background-image: image-url("sinax-logo-sm.png")
+  }
 }
