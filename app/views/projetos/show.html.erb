@@ -2,67 +2,67 @@
 <% provide(:title, "Projeto " + head) %>
 <% provide(:header, head) %>
 
+
+<p id="notice"><%= notice %></p>
 <section>
-  <p id="notice"><%= notice %></p>
-  <section>
-    <div class="row min-width">
-      <div id="form-show" class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 min-width">
+  <div class="row min-width">
+    <div id="form-show" class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 min-width">
 
-        <label>Nome</label>
-        <p>
-          <%= @projeto.nome %>
-        </p>
+      <label>Nome</label>
+      <p>
+        <%= @projeto.nome %>
+      </p>
 
-        <label>Código base</label>
-        <p>
-          <%= @projeto.codigo_base %>
-        </p>
+      <label>Código base</label>
+      <p>
+        <%= @projeto.codigo_base %>
+      </p>
 
-        <label>Revisão</label>
-        <p>
-          <%= @projeto.revisao %>
-        </p>
+      <label>Revisão</label>
+      <p>
+        <%= @projeto.revisao %>
+      </p>
 
-        <label>Data</label>
-        <p>
-          <%= @projeto.data %>
-        </p>
+      <label>Data</label>
+      <p>
+        <%= @projeto.data %>
+      </p>
 
-        <label>Usuário</label>
-        <p>
-          <%= @projeto.usuario %>
-        </p>
+      <label>Usuário</label>
+      <p>
+        <%= @projeto.usuario %>
+      </p>
 
-        <label>Observações</label>
-        <p>
-          <%= @projeto.observacoes %>
-        </p>
+      <label>Observações</label>
+      <p>
+        <%= @projeto.observacoes %>
+      </p>
 
-        <label>Número de habitantes</label>
-        <p>
-          <%= @projeto.numero_habitantes %>
-        </p>
+      <label>Número de habitantes</label>
+      <p>
+        <%= @projeto.numero_habitantes %>
+      </p>
 
-        <label>Localização</label>
-        <p>
-          <%= @projeto.localizacao %>
-        </p>
+      <label>Localização</label>
+      <p>
+        <%= @projeto.localizacao %>
+      </p>
 
-        <label>Tipo do projeto</label>
-        <p>
-          <%= @projeto.tipo_projeto %>
-        </p>
-      </div>
+      <label>Tipo do projeto</label>
+      <p>
+        <%= @projeto.tipo_projeto %>
+      </p>
     </div>
-  </section>
-  <section>
-    <div class="row min-width">
-      <div class="col-xs-6 col-sm-3 col-sm-offset-3 col-md-2 col-md-offset-4">
-        <%= link_to 'Editar', edit_projeto_path(@projeto), :id => "my-button", :class => "btn btn-default"%>
-        </div>
-      <div class="col-xs-6 col-sm-3 col-md-2 ">
-        <%= link_to 'Voltar', projetos_path, :id => "my-button", :class => "btn btn-default pull-right" %>
-      </div>
-    </div>
-  </section>
+  </div>
 </section>
+<section>
+  <div class="row min-width">
+    <div class="col-xs-6 col-sm-3 col-sm-offset-3 col-md-2 col-md-offset-4">
+      <%= link_to 'Editar', edit_projeto_path(@projeto), :id => "my-button", :class => "btn btn-default"%>
+      </div>
+    <div class="col-xs-6 col-sm-3 col-md-2 ">
+      <%= link_to 'Voltar', projetos_path, :id => "my-button", :class => "btn btn-default pull-right" %>
+    </div>
+  </div>
+</section>
+

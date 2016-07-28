@@ -25,10 +25,11 @@
   margin-top: 10px;
 }
 
-#my-button:hover {
+#my-button:hover, #my-button:focus {
   color: #903E3E;
   border-color: #FFF;
   background-color: #e6e6e6;
+  outline: none;
 }
 
 .btn {
