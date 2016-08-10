@@ -23,7 +23,7 @@ header{
   height: 78px;
   border-bottom: 2px solid #AB4B4B;
   position: relative;
-  min-width: 373px;
+  min-width: 356px;
 }
 
 .navbar {
@@ -55,18 +55,19 @@ a:hover, a:focus{
 }
 
 .text-header {
-  width: 200px;
+  position: absolute;
+  top: 29px;
+  left: 24%;
+  width: 50%;
   color: #AB4B4B;
   height: 30px;
   margin: 0;
-  float: left;
   text-align: center;
 }
 
 body {
   right: 0;
   margin: 0;
-  overflow: hidden;
   position: relative;
   min-width: 353px;
 }

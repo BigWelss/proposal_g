@@ -1,4 +1,4 @@
-var main = function(){
+$(document).ready(function(){
     $('.icon-menu').click(function(){
         $('.menu').animate({
             right: '0px'
@@ -16,6 +16,4 @@ var main = function(){
             right: '0px'
         },200)
     });
-};
-
-$(document).ready(main);
+});
