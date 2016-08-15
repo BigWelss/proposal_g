@@ -5,7 +5,7 @@ $(document).ready(function(){
         }, 200);
         $('body').animate({
             right: '285px'
-        },200)
+        }, 200)
     });
 
     $('.icon-close').click(function(){
@@ -14,6 +14,6 @@ $(document).ready(function(){
         }, 200);
         $('body').animate({
             right: '0px'
-        },200)
+        }, 200)
     });
 });
