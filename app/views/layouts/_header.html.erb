@@ -6,7 +6,8 @@
       <span class="glyphicon glyphicon-remove"></span>
     </div>
     <ul>
-      <li><a href="#">Como usar</a></li>
+      <li><%= link_to "Menu Principal", menu_path, method: "get" %></li>
+      <li><%= link_to "Como usar", ajuda_path, method: "get" %></li>
       <li><%= link_to "Sair", logout_path, method: "delete" %></li>
     </ul>
   </div>
