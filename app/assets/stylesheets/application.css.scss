@@ -83,6 +83,13 @@ textarea {
   max-height: 100px;
 }
 
+label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 70.25%;
+}
+
 input {
   margin: 0 0 10px;
 }
@@ -135,6 +142,19 @@ textarea:focus, input:focus{
   cursor: pointer;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  padding-bottom: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-home {
+  float: right;
+  color: #000;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
   padding-bottom: 25px;
   padding-right: 25px;
   padding-top: 25px;

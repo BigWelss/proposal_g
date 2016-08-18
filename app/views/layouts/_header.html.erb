@@ -6,7 +6,6 @@
       <span class="glyphicon glyphicon-remove"></span>
     </div>
     <ul>
-      <li><%= link_to "Menu Principal", menu_path, method: "get" %></li>
       <li><%= link_to "Como usar", ajuda_path, method: "get" %></li>
       <li><%= link_to "Sair", logout_path, method: "delete" %></li>
     </ul>
@@ -27,9 +26,16 @@
 
 
       <% if logged_in? %>
+
           <div class="icon-menu">
             <span class="glyphicon glyphicon-menu-hamburger"></span>
           </div>
+          
+            <div class="icon-home">
+              <%= link_to menu_path, method: "get" do %>
+              <span class="glyphicon glyphicon-home"></span>
+              <% end %>
+            </div>
       <% end %>
 		
 
