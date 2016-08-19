@@ -1,6 +1,4 @@
 <header class="min-width-header">
-
-
   <div class="menu">
     <div class="icon-close">
       <span class="glyphicon glyphicon-remove"></span>
@@ -11,35 +9,20 @@
     </ul>
   </div>
 
+  <a href="#" class="logo">
+  </a>
 
-	
+  <h3 class="text-header"><%= header(yield(:header)) %></h3>
 
-
-        <a href="#" class="logo">
-        </a>
-
-        <h3 class="text-header"><%= header(yield(:header)) %></h3>
-
-
-
-
-
-
-      <% if logged_in? %>
-
-          <div class="icon-menu">
-            <span class="glyphicon glyphicon-menu-hamburger"></span>
-          </div>
-          
-            <div class="icon-home">
-              <%= link_to menu_path, method: "get" do %>
-              <span class="glyphicon glyphicon-home"></span>
-              <% end %>
-            </div>
+  <% if logged_in? %>
+      <div class="icon icon-menu">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </div>
+      
+      <%= link_to menu_path, method: "get" do %>
+        <div class="icon icon-home">
+          <span class="glyphicon glyphicon-home"></span>
+        </div>
       <% end %>
-		
-
-
-
-
+  <% end %>
 </header>

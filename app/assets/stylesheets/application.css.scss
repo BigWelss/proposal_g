@@ -24,6 +24,11 @@ header{
   border-bottom: 2px solid #AB4B4B;
   position: relative;
   min-width: 356px;
+  background-color: white;
+}
+
+main {
+  background-color: white;
 }
 
 .navbar {
@@ -72,6 +77,18 @@ body {
   min-width: 353px;
 }
 
+.shadow {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.4 !important;
+  background-color: black;
+  z-index: 2;
+  position: absolute;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out;
+}
 
 .min-width {
   min-width: 320px;
@@ -87,7 +104,7 @@ label {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 70.25%;
+  font-size: 60.25%;
 }
 
 input {
@@ -104,7 +121,7 @@ textarea:focus, input:focus{
   height: 100%;
   position: fixed;
   width: 285px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .menu ul {
@@ -130,40 +147,41 @@ textarea:focus, input:focus{
   text-transform: uppercase;
 }
 
+#foreground-div {
+  opacity: 0;
+}
+
 .icon-close {
   cursor: pointer;
   padding-left: 10px;
   padding-top: 10px;
 }
 
-.icon-menu {
+.icon {
+  position: relative;
+  border: 2px solid;
+  border-radius: 45px;
+  padding: 2px 3.5px;
+  height: 29px;
+  width: 29px;
+  max-width: 29px;
   float: right;
   color: #000;
   cursor: pointer;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  padding-bottom: 25px;
-  padding-right: 25px;
-  padding-top: 25px;
   text-decoration: none;
   text-transform: uppercase;
-}
+  top: 30px;
+} 
 
 .icon-home {
-  float: right;
-  color: #000;
-  cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 22px;
-  padding-bottom: 25px;
-  padding-right: 25px;
-  padding-top: 25px;
-  text-decoration: none;
-  text-transform: uppercase;
+  font-size: 16px;
+  margin-right: 6px;
 }
 
-span.glyphicon-menu-hamburger {
-  font-size: 1.6em;
+.icon-menu {
+  font-size: 18px;
+  margin-right: 2%;
 }
 
 .logo {

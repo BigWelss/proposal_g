@@ -12,14 +12,15 @@
   </head>
 
   <body>
+    <div id="foreground-div" class=""></div>
   	<%= render 'layouts/header' %>
     <main>
       
-        <% flash.each do |message_type, message| %>
+      <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>
-        <% end %>
-      
-        <%= yield %>
+      <% end %>
+    
+      <%= yield %>
     </main>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="/assets/app.js"></script>
